@@ -1,0 +1,55 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+.btnContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line {
+    display: flex;
+}
+
+.btn {
+    height: 120px;
+    width: 120px;
+    border-radius: 20%;
+    border: 5px solid black;
+    margin: 10px;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+.red { background-color: #c86c6c; }
+.yellow { background-color: #d4d48f; }
+.green { background-color: #84aa84; }
+.purple { background-color: #9a769a; }
+
+.flash {
+    background-color: white !important;
+}
+
+.game-over {
+    background-color: #ffb3b3;
+}
+
+/* 📱 Mobile screens */
+@media (max-width: 600px) {
+    .btn {
+        height: 90px;
+        width: 90px;
+        margin: 8px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
